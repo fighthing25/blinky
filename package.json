@@ -1,0 +1,32 @@
+{
+  "name": "blinky",
+  "version": "1.0.0",
+  "description": "Notch interaktif untuk Windows dengan jadwal shalat",
+  "author": "Blinky",
+  "license": "MIT",
+  "main": "main.cjs",
+  "scripts": {
+    "build": "vite build",
+    "start": "vite build && electron .",
+    "typecheck": "tsc --noEmit",
+    "dist": "vite build && electron-builder --win --x64 --publish never"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "framer-motion": "^11.15.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

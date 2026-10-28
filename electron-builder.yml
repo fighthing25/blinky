@@ -1,0 +1,22 @@
+appId: com.blinky.app
+productName: Blinky
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**
+  - main.cjs
+  - preload.cjs
+  - package.json
+electronLanguages:
+  - en-US
+win:
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: true
+  perMachine: false
+  artifactName: ${productName}-Setup-${version}.${ext}
